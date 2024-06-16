@@ -1,0 +1,234 @@
+@media (min-width: 2560px) {
+
+    main::after {
+        background: linear-gradient(0deg, #000 15%, rgba(0, 0, 0, 0) 55%) no-repeat;
+        width: 100vw;
+    }
+
+    .conteudo {
+        min-height: 100vh;
+        max-width: 1040px;
+    }
+
+    .conteudo .nome-personagem {
+        font-size: 94px;
+    }
+
+    .conteudo .descricao {
+        font-size: 46px;
+        line-height: 50px;
+    }
+
+    .conteudo .logo {
+        width: 483px;
+        height: 104px;
+    }
+
+    .botoes {
+        min-height: 96vh;
+        padding: 20px;
+        gap: 3px;
+        top: -20px;
+    }
+
+    .botoes .botao {
+        border: 3px solid #011103;
+    }
+
+    .botoes .botao img {
+        border-radius: 50%;
+        width: 10rem;
+        max-width: 180px;
+    }
+}
+
+/* @media (min-width: 1440px) {
+
+    .conteudo .nome-personagem {
+        font-size: 45px;
+    }
+
+    .conteudo {
+        font-size: 20px;
+        max-width: 420px;
+
+    }
+
+    .conteudo .descricao {
+        line-height: 24px;
+        overflow-y: scroll;
+    }
+
+    .conteudo .logo {
+        width: 220px;
+        height: 46px;
+    }
+
+} */
+
+
+@media (min-width: 768px) and (max-width: 1365px) {
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    main::after {
+        width: 100vw;
+    }
+
+    main .personagem .imagem {
+        height: 85%;
+    }
+
+    .conteudo {
+        justify-content: flex-end;
+        left: 0;
+        top: -20%;
+        max-width: 100vw;
+        padding: 30px;
+    }
+
+    .conteudo .nome-personagem {
+        font-size: 34px;
+    }
+
+    .conteudo .descricao {
+        max-width: 500px;
+        max-height: 132px;
+        line-height: 22px;
+        overflow-y: scroll;
+        margin-bottom: 10px;
+    }
+
+    .conteudo .logo {
+        width: 175px;
+        height: 37px;
+    }
+
+    .botoes {
+        flex-direction: row;
+        align-items: flex-end;
+        min-height: 97vh;
+        width: 100%;
+        padding: 15px;
+        overflow-x: auto;
+    }
+
+    .botoes .botao img {
+        max-width: 60px;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+    main::after {
+        background: linear-gradient(0deg, #000 20%, rgba(0, 0, 0, 0) 65%) no-repeat;
+        width: 100vw;
+    }
+
+    main .personagem .imagem {
+        height: 85%;
+    }
+
+    .conteudo {
+        justify-content: flex-end;
+        left: 0;
+        top: -20%;
+        max-width: 100vw;
+        padding: 30px;
+    }
+
+    .conteudo .nome-personagem {
+        font-size: 36px;
+    }
+
+    .conteudo .descricao {
+        max-width: 420px;
+        max-height: 136px;
+        overflow-y: scroll;
+        line-height: 22px;
+    }
+
+    .conteudo .logo {
+        width: 175px;
+        height: 37px;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .botoes {
+        flex-direction: row;
+        align-items: flex-end;
+        width: 100%;
+        padding: 30px;
+        overflow-x: auto;
+    }
+
+    .botoes .botao img {
+        max-width: 58px;
+    }
+
+    .menu-lateral{
+        min-height: auto;
+        margin-top: 10px;
+    }
+
+    .menu-lateral ul{
+        flex-direction: row;
+    }
+
+    .menu-lateral .icone{
+        width: 20px;
+    }
+}
+
+
+@media (max-width: 425px) {
+
+    main .personagem .imagem {
+        height: 75%;
+    }
+
+    main::after {
+        background: linear-gradient(0deg, #000 38%, rgba(0, 0, 0, 0.1) 65%) no-repeat;
+    }
+
+    .conteudo .logo {
+        width: 112px;
+        height: 24px;
+        margin-bottom: 4px;
+    }
+
+    .conteudo {
+        margin-top: -70px;
+        justify-content: flex;
+        left: 0;
+        padding: 6px 12px;
+    }
+
+    .conteudo .nome-personagem {
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+
+    .conteudo .descricao {
+        max-width: 260px;
+        line-height: 14px;
+        font-size: 13px;
+    }
+
+    .botoes {
+        display: flex;
+        padding: 10px;
+        top: -10%;
+        overflow-x: auto;
+    }
+
+    .botoes .botao img {
+        max-width: 58px;
+    }   
+}

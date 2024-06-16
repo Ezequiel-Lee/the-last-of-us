@@ -1,0 +1,146 @@
+*, 
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background-color: #000;
+  overflow: hidden;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(0deg, #000 15%, rgba(0, 0, 0, 0.1) 38%) no-repeat;
+}
+
+main .personagem {
+  display: none;
+  height: 100vh;
+}
+
+main .personagem.selecionado {
+  display: block;
+}
+
+main .personagem .imagem {
+  background-image: url(../img/elliebg.jpg);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;
+  animation: fadeIn;
+  animation-duration: 2s;
+  animation: fadeBackground;
+  animation-duration: 1.25s;
+}
+
+.conteudo {
+  position: absolute;
+  top: 0;
+  left: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 380px;
+  z-index: 1;
+}
+
+.conteudo .nome-personagem {
+  font-size: 44px;
+  color: #fff;
+  font-family: 'secular one';
+  font-weight: 400;
+  text-shadow: 2px 2px 1px #000;
+  margin-bottom: 10px;
+  cursor: pointer;
+  animation: fadeInDown;
+  animation-duration: 1.25s;
+}
+
+.conteudo .descricao {
+  color: #fff;
+  font-family: 'Rubik';
+  line-height: 24px;
+  animation: fadeInLeft;
+  animation-duration: 1.25s;
+}
+
+.conteudo .logo {
+  background-image: url(../img/logo.png);
+  background-size: cover;
+  width: 220px;
+  height: 46px;
+  margin-bottom: 8px;
+  animation: fadeIn;
+  animation-duration: 3s;
+}
+
+.botoes {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  min-height: 95vh;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: end;
+  gap: 15px;
+  padding: 15px;
+  z-index: 2;
+}
+
+.botoes .botao {
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 50%;
+  animation: fadeInLeft;
+  animation-duration: 1.25s;
+  transition: 0.3s all ease-out;
+  transform: scale(1.1);
+}
+
+.botoes .botao img {
+  border-radius: 45px;
+  max-width: 90px;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.3);
+}
+
+.botoes .botao:hover {
+  transform: scale(1.2);
+  transition: 0.3s all ease-out;
+  filter: brightness(1.2);
+}
+
+.botoes .botao.selecionado {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px #aa0000;
+  transition: 0.3s all ease-out;
+  animation: pulse 1.3s infinite;
+}
